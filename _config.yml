@@ -15,6 +15,5 @@ github_username:  x-lugoo
 paginate: 5
 theme-dark: false #Set to true to change to dark website theme
 
-plugins: [jekyll-paginate, kramdown]
 # Build settings
 markdown: kramdown
