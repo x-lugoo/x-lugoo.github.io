@@ -1,9 +1,8 @@
 ---
 layout: page
-title: Download
+title: 文档下载
 permalink: /download/
 
-tagline: "文档下载"
 ---
 
 <br>
