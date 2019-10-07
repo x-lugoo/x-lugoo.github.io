@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+function downApp(){
+	var u = navigator.userAgent, 
+	isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1,
+	isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/),
+	urls = {
+		'android':'http://apphtml.51zhi.cn/index.php?r=index/down&app_id=8439?t=1570431299',
+		'ios':'https://itunes.apple.com/cn/app/id1363877544',
+		'other':'http://apphtml.51zhi.cn/index.php?r=index/down&app_id=8439?t=1570431299'
+	};
+	//三元运算
+	// window.location.href = isAndroid? urls.android : isiOS? urls.ios : urls.other;
+	//简化
+	if(isAndroid){
+		window.location.href=urls.android;
+	}else if(isiOS){
+		window.location.href=urls.ios;
+	}else{
+		window.location.href=urls.other;
+	}
+}
+downApp();
+</script>
+
+</body>
+</html>
+
+
